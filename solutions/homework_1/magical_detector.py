@@ -13,3 +13,16 @@
     
     Вывести, является ли предмет магическим
 """
+a = input()
+a = int(a)
+b = input()
+b = str(b)
+c = input()
+c = int(c)
+d = input()
+d = bool(d)
+
+if (a > 1000) and (b == "серебро" or b == "золото") and (c < 500 or d == True):
+    print("магический")
+else:
+    print("не магический")

@@ -29,12 +29,7 @@ def compute_time(velocity: int, distance: int) -> float:
             Количество дней до прибытия на планету
     """
     
-    days = distance / velocity / 3600 / 24
-    return days  # Вместо 0 поставить полученный результат, записанный в переменную days
- 
-velocity = input("Введите скорость в км/с: ")
-velocity = int(velocity)
-distance = input("Введите расстояние в км: ")
-distance = int(distance)
+    # Здесь проводятся вычисления
+    return 0  # Вместо 0 поставить полученный результат, записанный в переменную days
 
-print(compute_time(velocity=velocity, distance=distance))
+# Здесь проводится считывание данных и вывод результата вызова функции

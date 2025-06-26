@@ -26,7 +26,7 @@ def rune_calculator(runes: str) -> int:
     """
     rune_strength = 0
     for rune in runes:
-        pass # вместо pass написать код для решения задачи
+        pass# вместо pass написать код для решения задачи
 
     return rune_strength
 

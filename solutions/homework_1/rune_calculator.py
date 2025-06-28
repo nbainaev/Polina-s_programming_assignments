@@ -26,8 +26,14 @@ def rune_calculator(runes: str) -> int:
     """
     rune_strength = 0
     for rune in runes:
-        pass# вместо pass написать код для решения задачи
-
+        if rune_strength == "a":
+            print("a")
+        elif rune_strength == "b":
+            print("b")
+        else:
+            print("c")
+        string = input("введите последовательность рун:")
+        rune_strength = rune_calculator(string)
     return rune_strength
 
 # Тут нужно прочитать входные данные и вывести суммарную силу рун

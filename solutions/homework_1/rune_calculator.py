@@ -26,12 +26,12 @@ def rune_calculator(runes: str) -> int:
     """
     rune_strength = 0
     for rune in runes:
-        if rune_strength == "a":
-            print("a")
-        elif rune_strength == "b":
-            print("b")
+        if runes == "a":
+            rune_strength += a
+        elif runes == "b":
+            rune_strength += b
         else:
-            print("c")
+            rune_strength += c
         string = input("введите последовательность рун:")
         rune_strength = rune_calculator(string)
     return rune_strength

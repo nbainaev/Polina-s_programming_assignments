@@ -11,8 +11,15 @@
     Функция возвращает значение дней до планеты, которое необходимо записать в переменную или вывести сразу на экран через print
 """
 
-def compute_time(velocity: int, distance: int) -> float:
-    """
+velocity = int(velocity)
+distance = input()
+distance = int(distance)
+def compute_time(distance: int, velocity: int) -> float:
+    time = (distance / velocity) / 60 / 60 / 24
+    return time
+time = compute_time(distance, velocity)
+print(time)
+"""
         Функция для вычисления времени полета до планеты
 
         Параметры
@@ -30,6 +37,6 @@ def compute_time(velocity: int, distance: int) -> float:
     """
     
     # Здесь проводятся вычисления
-    return 0  # Вместо 0 поставить полученный результат, записанный в переменную days
+ # Вместо 0 поставить полученный результат, записанный в переменную days
 
 # Здесь проводится считывание данных и вывод результата вызова функции

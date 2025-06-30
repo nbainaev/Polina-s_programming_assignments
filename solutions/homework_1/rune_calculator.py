@@ -10,6 +10,7 @@
 a = 10
 b = 20
 c = 30
+
 def rune_calculator(runes: str) -> int:
     """
         Функция для вычисления силы последовательности рун.
@@ -26,14 +27,15 @@ def rune_calculator(runes: str) -> int:
     """
     rune_strength = 0
     for rune in runes:
-        if runes == "a":
+        if rune == "a":
             rune_strength += a
-        elif runes == "b":
+        elif rune == "b":
             rune_strength += b
         else:
             rune_strength += c
-        string = input("введите последовательность рун:")
-        rune_strength = rune_calculator(string)
+    
     return rune_strength
 
-# Тут нужно прочитать входные данные и вывести суммарную силу рун
+string = input("введите последовательность рун:")
+rune_strength = rune_calculator(string)
+print(rune_strength)

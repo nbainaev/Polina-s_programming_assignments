@@ -11,8 +11,6 @@
 Пример:
 Ввод: " аЛексАНдр пУШКин " → Вывод: "Пушкин, А."
 """
-name = input("введите ваше имя и фамилию:")
-string = name.title().strip()
-a = 2
-b = 5
-print()
+name = input("введите ваше имя и фамилию:").strip().title()
+ind = name.find(" ")
+print(f"{name[ind + 1:]}, {name[0]}.")

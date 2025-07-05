@@ -6,3 +6,12 @@
 
 -Используйте метод find() и метод lower()
 """
+st = input("Введите строку:")
+st_2 = st.lower()
+subst = input("Введите ещё одну, пожалуйста:")
+subst_2 = subst.lower()
+find_ = st_2.find(subst_2)
+if find_ != -1:
+    print("Есть контакт!")
+else:
+    print("Мимо!")

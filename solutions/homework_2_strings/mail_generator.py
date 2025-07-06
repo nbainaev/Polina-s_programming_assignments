@@ -11,4 +11,9 @@
 Проверьте длину email (должна быть не менее 12 символов).
 Используйте срезы, lower(), strip(), len(), f-строки.
 """
-name = input("Введите ваше имя и фамилию:").lower
+name = input("Введите ваше имя и фамилию:").strip(" ").lower()
+name_2 = name[:3]
+index = name.find(" ")
+name_3 = name[index + 1:]
+if len() >= 12:
+    print(f"{name_2}.{name_3}@mail.com")

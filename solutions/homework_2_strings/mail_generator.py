@@ -15,5 +15,6 @@ name = input("Введите ваше имя и фамилию:").strip(" ").low
 name_2 = name[:3]
 index = name.find(" ")
 name_3 = name[index + 1:]
-if len() >= 12:
+i = len(f"{name_2}.{name_3}@mail.com")
+while i >= i:
     print(f"{name_2}.{name_3}@mail.com")

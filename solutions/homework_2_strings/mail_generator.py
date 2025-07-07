@@ -15,6 +15,7 @@ name = input("Введите ваше имя и фамилию:").strip(" ").low
 name_2 = name[:3]
 index = name.find(" ")
 name_3 = name[index + 1:]
-i = len(f"{name_2}.{name_3}@mail.com")
-while i >= i:
-    print(f"{name_2}.{name_3}@mail.com")
+simbol_1 = "."
+simbol_2 = "@mail.com"
+if len(name_2 + simbol_1 +name_3 + simbol_2) >= 12:
+    print(f"{name_2}{simbol_1}{name_3}{simbol_2}")

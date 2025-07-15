@@ -17,5 +17,5 @@ index = name.find(" ")
 name_3 = name[index + 1:]
 simbol_1 = "."
 simbol_2 = "@mail.com"
-if len(name_2 + simbol_1 +name_3 + simbol_2) >= 12:
+if len(name_2 + simbol_1 + name_3 + simbol_2) >= 12:
     print(f"{name_2}{simbol_1}{name_3}{simbol_2}")

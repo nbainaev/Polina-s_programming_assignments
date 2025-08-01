@@ -6,6 +6,6 @@
 """
 n = int(input("введите число:"))
 i = 1
-while n >= i:
+while i < n:
     print("*")
 i = i + 1

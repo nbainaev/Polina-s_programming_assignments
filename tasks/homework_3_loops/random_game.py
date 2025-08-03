@@ -16,3 +16,10 @@
 import random
 random_number = random.randint(0, 50) - генерирует случайное число от 0 до 50
 """
+import random
+random_number = random.randint(0, 100)
+num = int(input("введите число:"))
+while num == random_number:
+    break
+else:
+    num = int(input("введите число ещё раз:"))

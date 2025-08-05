@@ -20,4 +20,8 @@ import random
 random_number = random.randint(0, 100)
 num = int(input("введите число:"))
 while num == random_number:
-    break
+    print("Это правильный ответ!")
+    if random_number > num:
+        num = int(input("Больше:"))
+    elif random_number < num:
+        num = int(input("Меньше:"))

@@ -19,9 +19,9 @@ random_number = random.randint(0, 50) - генерирует случайное 
 import random
 random_number = random.randint(0, 100)
 num = int(input("введите число:"))
-while num == random_number:
-    print("Это правильный ответ!")
-    if random_number > num:
-        num = int(input("Больше:"))
-    elif random_number < num:
+while random_number > num:
+    print("Больше:")
+    while random_number < num:
         num = int(input("Меньше:"))
+    if random_number == num:
+        num = int(input("Это правильный ответ!"))

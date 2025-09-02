@@ -12,3 +12,10 @@ array = list(map(float, input("Сообщение пользователю").spl
 нужно использовать срезы для отсортированного по возрастанию списка.
 """
 array = list(map(float, input("введите список чисел:").split( )))
+string = input("по возрастанию или по убыванию: ")
+if string == "по возрастанию":
+    array.sort()
+    print(array)
+elif string == "по убыванию":
+    array.sort()
+    print(array[::-1])
